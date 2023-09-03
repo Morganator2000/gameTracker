@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/myDeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:hint="Your commander"
+        android:minHeight="48dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/commander2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Commander 2"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/myDeck"
+        app:layout_constraintTop_toBottomOf="@+id/myDeck" />
+
+    <EditText
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:hint="Player 2"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commander2"
+        app:layout_constraintStart_toEndOf="@+id/commander2"
+        app:layout_constraintTop_toTopOf="@+id/commander2" />
+
+    <EditText
+        android:id="@+id/commander3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Commander 3"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/commander2"
+        app:layout_constraintStart_toStartOf="@+id/commander2"
+        app:layout_constraintTop_toBottomOf="@+id/commander2" />
+
+    <EditText
+        android:id="@+id/player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:hint="Player 3"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commander3"
+        app:layout_constraintStart_toEndOf="@+id/commander3"
+        app:layout_constraintTop_toTopOf="@+id/commander3" />
+
+    <EditText
+        android:id="@+id/commander4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Commander 4"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/commander3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/commander3"
+        app:layout_constraintTop_toBottomOf="@+id/commander3" />
+
+    <EditText
+        android:id="@+id/player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:hint="Player 4"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commander4"
+        app:layout_constraintStart_toEndOf="@+id/commander4"
+        app:layout_constraintTop_toTopOf="@+id/commander4" />
+
+    <EditText
+        android:id="@+id/commander5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Commander 5"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/commander4"
+        app:layout_constraintStart_toStartOf="@+id/commander4"
+        app:layout_constraintTop_toBottomOf="@+id/commander4" />
+
+    <EditText
+        android:id="@+id/player5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:hint="Player 5"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commander5"
+        app:layout_constraintStart_toEndOf="@+id/commander5"
+        app:layout_constraintTop_toTopOf="@+id/commander5" />
+
+    <TextView
+        android:id="@+id/firstPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="First Player"
+        app:layout_constraintBottom_toTopOf="@+id/myDeck"
+        app:layout_constraintEnd_toStartOf="@+id/winner" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="35dp"
+        android:layout_height="298dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commander5"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlayer"
+        app:layout_constraintStart_toStartOf="@+id/firstPlayer"
+        app:layout_constraintTop_toTopOf="@+id/myDeck">
+
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Winner"
+        app:layout_constraintBottom_toBottomOf="@+id/firstPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstPlayer" />
+
+    <RadioGroup
+        android:layout_width="35dp"
+        android:layout_height="297dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commander5"
+        app:layout_constraintEnd_toEndOf="@+id/winner"
+        app:layout_constraintStart_toStartOf="@+id/winner"
+        app:layout_constraintTop_toTopOf="@+id/myDeck">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/wincon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:entries="@array/wincons"
+        android:hint="Win Condition"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/commander5"
+        app:layout_constraintStart_toStartOf="@+id/commander5"
+        app:layout_constraintTop_toBottomOf="@+id/commander5" />
+
+    <EditText
+        android:id="@+id/keyCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Key Card(s)"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/wincon"
+        app:layout_constraintTop_toBottomOf="@+id/wincon" />
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Additional notes..."
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/keyCards"
+        app:layout_constraintTop_toBottomOf="@+id/keyCards" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginEnd="16dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="@+id/wincon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wincon"
+        app:layout_constraintTop_toTopOf="@+id/wincon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

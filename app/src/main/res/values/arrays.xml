@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wincons">
+        <item>Combat Damage</item>
+        <item>Combo</item>
+        <item>Effect Damage</item>
+        <item>Forfeit</item>
+        <item>Incremental Damage</item>
+        <item>Life Drain</item>
+        <item>Mill</item>
+        <item>Storm</item>
+        <item>Voltron</item>
+        <item>Win Effect</item>
+    </string-array>
+</resources>
